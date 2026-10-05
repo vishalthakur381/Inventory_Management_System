@@ -1,0 +1,67 @@
+# ==============================================================================
+# BharatStock — Project Requirements & Dependency Specification
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. System & Runtime Environment
+# ------------------------------------------------------------------------------
+node >= 18.0.0              # JavaScript runtime environment (LTS recommended)
+npm >= 9.0.0                # Node package manager
+mongodb >= 6.0.0            # Local MongoDB Community Server or MongoDB Atlas cluster
+git >= 2.30.0               # Version control system
+
+# Supported Operating Systems:
+# - Windows 10 / 11 (64-bit)
+# - macOS (Apple Silicon / Intel)
+# - Linux (Ubuntu 20.04+, Debian, Fedora, Arch)
+
+# ------------------------------------------------------------------------------
+# 2. Backend Dependencies (Node.js / Express.js)
+# Location: ./backend/package.json
+# ------------------------------------------------------------------------------
+express==5.2.1              # High-performance web framework for REST API routing
+mongoose==9.10.1            # Object Data Modeling (ODM) for MongoDB data schemas
+jsonwebtoken==9.0.3         # Stateless JWT token generation & verification for auth
+bcryptjs==3.0.3             # Cryptographic hashing for secure user passwords
+cors==2.8.6                 # Cross-Origin Resource Sharing middleware for API calls
+dotenv==17.4.2              # Environment variable loader from .env file
+express-validator==7.3.2    # Request body sanitization and data validation
+
+# Backend Developer Dependencies:
+nodemon==3.1.14             # Development server file watcher with hot reload
+
+# ------------------------------------------------------------------------------
+# 3. Frontend Dependencies (React.js / Vite)
+# Location: ./frontend/package.json
+# ------------------------------------------------------------------------------
+react==19.2.8               # Core UI library for declarative component architecture
+react-dom==19.2.8           # DOM renderer for React
+react-router-dom==7.18.4    # Client-side SPA routing and navigation guards
+axios==1.20.0               # Promise-based HTTP client with interceptors for JWT
+lucide-react==1.52.0        # Clean vector icons for warehouse navigation & UI
+
+# Frontend Developer Dependencies:
+vite==8.3.0                 # Next-generation frontend build tool and dev server
+@vitejs/plugin-react==6.1.1 # Fast Refresh support for React in Vite
+oxlint==1.81.0              # Modern JavaScript/React linter for code quality
+sucrase==3.35.1             # Fast JSX/JS transformation engine
+
+# ------------------------------------------------------------------------------
+# 4. Port & Network Requirements
+# ------------------------------------------------------------------------------
+PORT_FRONTEND=5173          # Vite development server default port
+PORT_BACKEND=5000           # Express API server default port
+PORT_MONGODB=27017          # Local MongoDB daemon port
+
+# ------------------------------------------------------------------------------
+# 5. Quick Setup Commands
+# ------------------------------------------------------------------------------
+# Backend:
+#   cd backend
+#   npm install
+#   npm run dev
+#
+# Frontend:
+#   cd frontend
+#   npm install
+#   npm run dev

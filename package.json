@@ -1,0 +1,24 @@
+{
+  "name": "bharatstock-inventory-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-Stack Inventory & Warehouse Management System built with Node.js, Express, React, and MongoDB",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "start": "cd backend && npm start",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "inventory-management",
+    "warehouse",
+    "mern-stack",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb",
+    "jwt-authentication"
+  ],
+  "author": "Vishal Thakur",
+  "license": "MIT"
+}
